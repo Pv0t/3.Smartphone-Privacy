@@ -248,6 +248,7 @@ The privacy world is continuously changing, with new applications, new features,
 <details>
 
 <summary>Forums:</summary>
+
 - [GrapheneOS](https://discuss.grapheneos.org/)
 - [PrivacyGuides](https://discuss.privacyguides.net/)
 
