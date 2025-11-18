@@ -34,7 +34,8 @@ The official site of GrapheneOS provides a detailed guide on how to install the 
 - [CLI Install](https://grapheneos.org/install/cli)
 
 > [!IMPORTANT]
-> After the installation of GrapheneOS ensure your bootloader is locked. | **Settings ➜ System ➜ Developer Options ➜ OEM unlocking ➜ [OFF]**
+> After the installation of GrapheneOS ensure your bootloader is locked.  
+> **| Settings ➜ System ➜ Developer Options ➜ OEM unlocking ➜ [OFF]**
 
 ---
 
@@ -110,19 +111,17 @@ All the settings I cover up are accessible on the app **'Settings'** of the Grap
   
 - More security & privacy ➜ Allow Sensors permission to apps by default ➜ ***[OFF]***
 
-# 3.0 Strategy
-## 3.1 Multiple users
-The useful feature that GrapheneOS is the user profile(multiple users). 
-Each user profiles have its own unique, randomly generated disk encryption key, and its unique key-encryption key is used to encrypt it. The owner profile does not have access to the data in other profiles. Filesystem-based encryption is designed so that files can be deleted without having the keys for their data and file names, which enables the owner profile to delete other profiles without them being active. GrapheneOS also added the 'end session' button in the power hold menu, which allows to put all the data of the user at rest. For more information [here](https://grapheneos.org/faq#encryption). In this chapter, I describe the two most used threat models.
-## 5.1 Only-one user
-![Model-1](https://github.com/user-attachments/assets/1cf2bdd5-c5f4-4754-97e2-ffd47fab4fa4)
+# 3.0 Threat models
+The most useful feature of GrapheneOS is the user profile feature (multiple users). Each user profile have its own unique key that is utilized for encrypting and decrypting the data associated with that user profile. The filesystem-based encryption is designed to allow the user profile to be deleted without requiring the keys, enabling the owner profile to delete other profiles even when they are not active. Additionally, GrapheneOS has introduced the **'end session'** feature for user profiles, accessible through the menu power, this feature enables users to put the data of a specific profile at rest. In contrast, on Android 16 AOSP, the user are not be able to put the data in a rest state until the device is shut down or rebooted. For more information [here](https://grapheneos.org/faq#encryption).  
 
-I called the **'Only-one user'** model because it uses only the **'Owner'** profile. The **'Owner'** profile is created automatically when you configure the phone to the initial configuration, so there are no actions to make. As you can see in the image above, this model consists of installing and using all the apps on the **'Owner'** profile and using it with **Google Play Services** sandboxed provided by the **App Store** from GrapheneOS.
+In this chapter, I describe the two most used threat models.
+## 3.1 Only-one user
+This threat model suppose to use **'only-one user'** that is the **'Owner'** profile. The **'Owner'** profile is created automatically when you configure the phone to the initial configuration, so there are no actions to be done from the user. As you can see in the image below, this model consists of installing and using all the apps on the **'Owner'** profile and using it with **Google Play Services** sandboxed provided by the **App Store** from GrapheneOS.  
+<img width="761" height="521" alt="Only-One" src="https://github.com/user-attachments/assets/2890d9ca-a336-4383-b842-441541e21bb2" />
 
-## 5.2 Legion users
-![Model-2](https://github.com/user-attachments/assets/cf68a7ae-c314-4a81-8249-69f9f3508b2f)
-
-I called this model **'Legion users'** for a large number of users it needs to be created, it consists of creating a multiple-user profile **[Settings -> System -> Multiple users -> Add user]**. As you can see in the diagram above, the **'Owner'** profile will be used only for the installation and updates of the apps there are on Google Play Store or other stores, after the installation of the applications you want to install, you have to disable it in the **'Owner'** profile and use the feature **'Install available apps'** **[Settings -> System -> Multiples users -> (Choose a profile you want to install the application) -> Install available apps]** to push the applications in the other profiles. GrapheneOS allows you to create a maximum of 31 profiles on your phone, however, it is a waste to create a profile for each app you go to download, so the best way is to create a categorized profile and insert in that profile only the apps involved in that category.
+## 3.2 Multiple users
+This threat model suppose to use **multiple users** that needs to be created, it consists of creating a multiple-user profile located in **[Settings -> System -> Multiple users -> Add user]**. As you can see in the image below, the **'Owner'** profile will be used only for the installation and updates of the apps there are on **Google Play Store** or other **app stores**, after the installation of the applications you want to install, you have to disable it in the **'Owner'** profile and use the feature **'Install available apps'** located in **[Settings -> System -> Multiples users -> (Choose a profile you want to install the application) -> Install available apps]** to push the applications in the other profiles. In this way the **'Owner'** profile doesn't have any type of attack vector since it will not be used by the user because the main application are inside other profiles. If one of the user profiles will be compromised the malware cannot be spread to ther user proiles.  
+<img width="1276" height="942" alt="Multiple-users drawio" src="https://github.com/user-attachments/assets/bfdacf14-3042-4027-abef-65791c755e1b" />
 
 # 4.0 Software
 If you want improve your privacy, reduce the attack surface and tracking, you should install only the applications you really needs it. Reduce the permissions of applications to the minimum of necessary.
@@ -274,11 +273,9 @@ The privacy world is continuously changing, with new applications, new features,
 
 # 6.0 Clarify some doubts and possible questions.
 
-1. **What is a Duress PIN?** The Duress PIN feature that GrapheneOS provides, is able to set a PIN of your choice and if this PIN is entered on the lock screen your entire device will be wiped. Fore more information [here](https://grapheneos.org/features#duress).
+1. **What is a Duress PIN?** The Duress PIN feature that GrapheneOS provides, is able to set a PIN of your choice and if this PIN is entered on the lock screen your entire device will be wiped. Fore more information [here](https://grapheneos.org/features#duress).  
+***1a.*** **Why in the 'Settings' section the Duress PIN is not suggested?** The Duress PIN has only one problem, you can be charged if it is used against law enforcement to hide something, so using it, most of the time it's pretty useless nowadays. For more information, this is a law that you can be charged if used in the **United States** [Destruction of Evidence](https://www.chamberslawfirmca.com/what-does-it-mean-to-be-charged-with-destruction-of-evidence-a-criminal-defense-attorney-explains/).
 
-2. **Why in the 'Settings' section the Duress PIN is not suggested?** The Duress PIN has only one problem, you can be charged if it is used against law enforcement to hide something, so using it, most of the time it's pretty useless nowadays. For more information, this is a law that you can be charged if used in the **United States** [Destruction of Evidence](https://www.chamberslawfirmca.com/what-does-it-mean-to-be-charged-with-destruction-of-evidence-a-criminal-defense-attorney-explains/).
-
-3. **What is PIN scramble?** When you have to insert your PIN to unlock your phone, as you have notice the numbers have always the same order from lower number(top) to higher number(bottom), PIN scramble prevents that. When PIN scrambe is enabled the layout will be generated randomly. A possible side-eye can try to steal your PIN depending on the possition where you press on screen lock, so if some side-eye is trying to steal your PIN this feature will make it harder. For more information [here](https://grapheneos.org/features#pin-scrambling).
-
-6. **Why in the 'Settings' section the scramble PIN are not suggested?** This feature has some disadvantages. The first one is that the layout is always randomized, so your brain needs to "check" every time you want to unlock the phone where the numbers you want to press are, which means it will take you longer to unlock your phone. Let's make an example: Imagine you are in the subway or in some crowded place and you want to unlock your phone. With this feature enabled, the people beside you and watching your phone will know your PIN because the slower you have to realize where the numbers you need to press are, the more time it requires you to unlock the phone. This gives a lot of advantages to the hacker to read your PIN.
+2. **What is PIN scramble?** When you have to insert your PIN to unlock your phone, as you have notice the numbers have always the same order from lower number(top) to higher number(bottom), PIN scramble prevents that. When PIN scrambe is enabled the layout will be generated randomly. A possible side-eye can try to steal your PIN depending on the possition where you press on screen lock, so if some side-eye is trying to steal your PIN this feature will make it harder. For more information [here](https://grapheneos.org/features#pin-scrambling).  
+***2a.*** **Why in the 'Settings' section the scramble PIN are not suggested?** This feature has some disadvantages. The first one is that the layout is always randomized, so your brain needs to "check" every time you want to unlock the phone where the numbers you want to press are, which means it will take you longer to unlock your phone. Let's make an example: Imagine you are in the subway or in some crowded place and you want to unlock your phone. With this feature enabled, the people beside you and watching your phone will know your PIN because the slower you have to realize where the numbers you need to press are, the more time it requires you to unlock the phone. This gives a lot of advantages to the hacker to read your PIN.
 
