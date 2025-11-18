@@ -39,20 +39,21 @@ The official site of GrapheneOS provides a detailed guide on how to install the 
 ---
 
 # 2.0 System settings (GrapheneOS)
-All the settings I cover up are accessible on the app **'Settings'** of the GrapheneOS operating system. These settings are based only on my personal preferences and meet a high security and privacy level, feel free to copy or change them based on your preferences. I don't cover personal aspects such as the theme of the keyboard or night light mode. 
+All the settings I cover up are accessible on the app **'Settings'** of the GrapheneOS operating system. These settings are based only on my threat model and meet a high security and privacy level, feel free to copy or change them based on your preferences. I don't cover personal aspects such as the theme of the keyboard or night light mode. 
 
-## 4.1 Network & Internet
-- SIMs ➜ (Choose your carrier) ➜ Allow 2G ➜ **[OFF]** | [LTE-Only Mode](https://grapheneos.org/usage#lte-only-mode)
-- Internet ➜ (Choose your home network) ➜ Privacy ➜ **[Use per-connection randomized MAC]**
-- Private DNS ➜ Private DNS provider hostname ➜ **[all.dns.mullvad.net](https://mullvad.net/it/help/dns-over-https-and-dns-over-tls)**
-  <details>
+## 2.1 Network & Internet
+- Internet ➜ Network preferences ➜ Turn on Wi-Fi automatically ➜ ***[OFF]***
+- Internet ➜ Network preferences ➜ Notify for public networks ➜ ***[OFF]***
+- Internet ➜ Network preferences ➜ Allow WEP networks ➜ ***[OFF]***
+- Internet ➜ (Choose your home network) ➜ Privacy ➜ ***[Use per-connection randomized MAC]***
+- SIMs ➜ (Click on your carrier) ➜ 4G Calling ➜ ***[ON]***
+- SIMs ➜ (Click on your carrier) ➜ Preferred network type ➜ ***[5G (recommended)]***
+- SIMs ➜ (Click on your carrier) ➜ 2G network protection ➜ ***[ON]***
+- Data Saver ➜ ***[ON]***
+- Internet connectivity checks ➜ ***[OFF]***
+- Private DNS ➜ Private DNS provider hostname ➜ ***[all.dns.mullvad.net](https://mullvad.net/it/help/dns-over-https-and-dns-over-tls)***
 
-  <summary>More information:</summary>
-
-  > It's reccomended to use a Private DNS, I use Mullvad DNS because it blocks all tracker, ads, malware, gambling and social media.
-
-  </details>
-- VPN ➜ Choose your VPN ➜ Settings ➜ Always-on VPN & Block connections without VPN ➜ **[ON]**
+- VPN ➜ (Choose your VPN) ➜ Settings ➜ Always-on VPN & Block connections without VPN ➜ ***[ON]***
   <details>
 
   <summary>More information:</summary>
@@ -61,62 +62,53 @@ All the settings I cover up are accessible on the app **'Settings'** of the Grap
 
   </details>
 
-- Internet connectivity checks ➜ **[OFF]**
-- Internet ➜ Network preferences ➜ Notify for public networks ➜ **[OFF]**
-## 4.2 Connected devices
-- Connection preferences ➜ Bluetooth ➜ Pair new device ➜ Device name ➜ **[localhost]**
-- Connection preferences ➜ NFC ➜ Use NFC ➜ **[ON]** && ➜ Require device unlock for NFC ➜ **[ON]** && Use NFC ➜ **[OFF]**
-- Connection preferences ➜ Printing ➜ Default Print service ➜ **[OFF]**
-## 4.3 Apps
-- Special app access ➜ Special access to hardware accelerators for Google Apps ➜ **[OFF]**
-## 4.4 Notifications
-- Enhanced notifications ➜ **[OFF]**
-- Notifications on lock screen ➜ **[Don't show any notifications]**
-## 4.5 Display
-- Screen timeout ➜ **[15 seconds]**
-- Screen saver ➜ **[OFF]**
-- Wallapper & Style ➜ Shortcuts ➜ **[None]** (Left shortcut and right shortcut)
-## 4.6 Security & privacy
-- Device unlock ➜ Screen lock ➜ **[PIN]**
+## 2.2 Connected devices
+- Connection preferences ➜ Bluetooth ➜ Pair new device ➜ Device name ➜ ***[localhost]***
 
-> [!WARNING]
+## 2.3 Apps
+- Sandboxed Google Play ➜ Google Settings ➜ ***(Disable all settings you can)***
+- Sandboxed Google Play ➜ Google Location Accurarcy ➜ ***[OFF]***
+- Contacts storage ➜ ***[Device Only]***
+- Special app access ➜ Special access to hardware accelerators for Google Apps ➜ ***[OFF]***
+
+## 2.4 Notifications
+- Notifications on lock screen ➜ ***[OFF]***
+- Enhanced notifications ➜ ***[OFF]***
+
+## 2.5 Display
+- Screen timeout ➜ ***[15 seconds]***
+- Smooth Display ➜ ***[ON]***
+
+## 2.6 Security & privacy
+- Device unlock ➜ Screen lock ➜ ***[PIN]***
+
+> [!IMPORTANT]
 > Remember that a biometric unlock isn't protected under the 4th amendment in the same way that a passphrase is. If your device is confiscated, you may be compelled to unlock it via biometrics fingerprint. For more [information](https://uclawreview.org/2020/01/28/smartphones-and-the-fourth-amendment-when-is-access-to-password-protected-information-permitted/).
 
-- Device unlock ➜ Screen lock (settings-icon) ➜ **[Enhanced PIN privacy]**
-- Device unlock ➜ Screen lock (settings-icon) ➜ Lock after screen timeout ➜ **[Immediately after timeout]**
-- Device unlock ➜ Screen lock (settings-icon) ➜ Power button instantly locks ➜ **[ON]**
-- Device unlock ➜ Screen lock (settings-icon) ➜ Allow camera access when locked ➜ **[OFF]**
-  <details>
+- Device unlock ➜ Screen lock ➜ Auto-confirm unlock ➜ ***[OFF]***
+- Device unlock ➜ Screen lock ➜ Scramble PIN input layout ➜ ***[OFF]***
+- Device unlock ➜ Screen lock ➜ Enhanced PIN privacy ➜ ***[ON]***
+- Device unlock ➜ Screen lock ➜ Allow camera access when locked ➜ ***[OFF]***
+- Device unlock ➜ Screen lock ➜ Lock after screen timeout ➜ ***[Immediately after timeout]***
+- Device unlock ➜ Screen lock ➜ Power button instantly locks ➜ ***[ON]***  
 
-  <summary>More information:</summary>
-
-  > I recommend disabling this setting because can be used to bypass the screen look as has been the case historically with both Android and iOS.
-
-  </details>
-
-- Exploit protection ➜ Turn off wi-fi automatically ➜ **[15 seconds]**
-- Exploit protection ➜ Turn off Bluetooth automatically ➜ **[15 seconds]**
-- Privacy ➜ Camera access ➜ **[OFF]**
-- Privacy ➜ Microphone access ➜ **[OFF]**
-- Exploit protection ➜ Auto reboot ➜ **[4 hours]**
-  <details>
-
-  <summary>More information:</summary>
-
-  > Maintaining stealthy persistence after a successful infection is even more difficult. As such, periodically rebooting your device could wipe memory-resident. Don't worry your phone does not will reboot meanwhile you are using the phone. 
-
-  </details>
+- Privacy controls ➜ Camera access ➜ ***[OFF]***
+- Privacy controls ➜ Microphone access ➜ ***[OFF]***
+- Privacy controls ➜ Show clipboard access ➜ ***[ON]***  
   
-- Exploit protection ➜ USB-C port ➜ **[Charging-only]**
-## 4.7 About Phone
-- Device name ➜ **[localhost]**
-  <details>
-
-  <summary>More information:</summary>
-
-  > Avoid using a hostname that can give useful information. Use a generic name. 
-
-  </details>
+- Exploit protection ➜ Auto reboot ➜ ***[4 hours]***
+- Exploit protection ➜ USB-C port ➜ ***[Charging-only]***
+- Exploit protection ➜ Turn off Wi-Fi automatically ➜ ***[15 seconds]***
+- Exploit protection ➜ Turn off Bluetooth automatically ➜ ***[15 seconds]***  
+  
+- Exploit protection ➜ Memory tagging ➜ Enable by default ➜ ***[ON]***
+- Exploit protection ➜ Native code debugging ➜ Block for third-party apps by default ➜ ***[ON]***
+- Exploit protection ➜ WebView JIT ➜ Disable for third-party apps by default ➜ ***[ON]***
+- Exploit protection ➜ Dynamic code loading via memory ➜ Restrict for third-party apps by default ➜ ***[ON]***
+- Exploit protection ➜ Dynamic code loading via storage ➜ Restrict for third-party apps by default ➜ ***[ON]***
+- Exploit protection ➜ Secure app spawning ➜ Use secure app spawning ➜ ***[ON]***  
+  
+- More security & privacy ➜ Allow Sensors permission to apps by default ➜ ***[OFF]***
 
 # 3.0 Strategy
 ## 3.1 Multiple users
