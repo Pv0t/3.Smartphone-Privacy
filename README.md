@@ -81,14 +81,23 @@ All the settings I cover up are accessible on the app **'Settings'** of the Grap
 - Device unlock ➜ Screen lock ➜ ***[PIN]***
 
 > [!IMPORTANT]
-> Remember that a biometric unlock isn't protected under the 4th amendment in the same way that a passphrase is. If your device is confiscated, you may be compelled to unlock it via biometrics fingerprint. For more [information](https://uclawreview.org/2020/01/28/smartphones-and-the-fourth-amendment-when-is-access-to-password-protected-information-permitted/).
+> Remember that a biometric unlock isn't protected under the 5th amendment in the same way that a passphrase is. If your device is confiscated, you may be compelled to unlock it via biometrics fingerprint. For more [information](https://esslawpartners.com/can-police-officers-force-you-to-unlock-your-cell-phone-what-does-the-fifth-amendment-say).
 
 - Device unlock ➜ Screen lock ➜ Auto-confirm unlock ➜ ***[OFF]***
 - Device unlock ➜ Screen lock ➜ Scramble PIN input layout ➜ ***[OFF]***
 - Device unlock ➜ Screen lock ➜ Enhanced PIN privacy ➜ ***[ON]***
 - Device unlock ➜ Screen lock ➜ Allow camera access when locked ➜ ***[OFF]***
 - Device unlock ➜ Screen lock ➜ Lock after screen timeout ➜ ***[Immediately after timeout]***
-- Device unlock ➜ Screen lock ➜ Power button instantly locks ➜ ***[ON]***  
+- Device unlock ➜ Screen lock ➜ Power button instantly locks ➜ ***[ON]***
+- Device unlock ➜ Duress password ➜ ***[SET YOUR PIN]***
+  <details>
+
+  <summary>More information:</summary>
+
+  > If you intend to use the **'Duress PIN'** in the **United States** you can be charged for [Destruction of Evidence](https://www.chamberslawfirmca.com/what-does-it-mean-to-be-charged-with-destruction-of-evidence-a-criminal-defense-attorney-explains/).
+
+  </details>
+
 
 - Privacy controls ➜ Camera access ➜ ***[OFF]***
 - Privacy controls ➜ Microphone access ➜ ***[OFF]***
@@ -98,9 +107,6 @@ All the settings I cover up are accessible on the app **'Settings'** of the Grap
 - Exploit protection ➜ USB-C port ➜ ***[Charging-only]***
 - Exploit protection ➜ Turn off Wi-Fi automatically ➜ ***[15 seconds]***
 - Exploit protection ➜ Turn off Bluetooth automatically ➜ ***[15 seconds]***  
-
-
-  For more information, this is a law that you can be charged if used in the **United States** [Destruction of Evidence](https://www.chamberslawfirmca.com/what-does-it-mean-to-be-charged-with-destruction-of-evidence-a-criminal-defense-attorney-explains/).
 - Exploit protection ➜ Memory tagging ➜ Enable by default ➜ ***[ON]***
 - Exploit protection ➜ Native code debugging ➜ Block for third-party apps by default ➜ ***[ON]***
 - Exploit protection ➜ WebView JIT ➜ Disable for third-party apps by default ➜ ***[ON]***
@@ -211,8 +217,8 @@ Here are some valuable features that can help minimize the attack surface and li
 - ![Bluesky](https://github.com/user-attachments/assets/3744595b-c406-4e9d-9470-777e95e29a42) Bluesky | **<sub><sup>[[Site](https://bsky.app/)]</sup></sub>** **<sub><sup>[[Google Play Store](https://play.google.com/store/apps/details?id=xyz.blueskyweb.app&hl=it)]</sup></sub>**
 
 ## 4.19 Music Player
-- Auxio | **<sub><sup>[Accrescent] [[GitHub](https://github.com/OxygenCobalt/Auxio)] [[F-Droid](https://f-droid.org/en/packages/org.oxycblt.auxio/)]</sup></sub>**
-- Metro | **<sub><sup>[[GitHub](https://github.com/MuntashirAkon/Metro)] [[F-Droid](https://f-droid.org/en/packages/io.github.muntashirakon.Music/)]</sup></sub>**
+- <img width="16" height="16" alt="Auxio" src="https://github.com/user-attachments/assets/4827bb56-a276-44ac-b961-4008b361d983" /> Auxio | **<sub><sup>[Accrescent] [[GitHub](https://github.com/OxygenCobalt/Auxio)] [[F-Droid](https://f-droid.org/en/packages/org.oxycblt.auxio/)]</sup></sub>**
+- <img width="16" height="16" alt="Metro" src="https://github.com/user-attachments/assets/5e72a54e-d945-4b25-aadc-e8b45be1e867" /> Metro | **<sub><sup>[[GitHub](https://github.com/MuntashirAkon/Metro)] [[F-Droid](https://f-droid.org/en/packages/io.github.muntashirakon.Music/)]</sup></sub>**
 
 ## 4.20 Phone Number & SMS Masking
 - ![SMS-Pool](https://github.com/user-attachments/assets/adbf54b2-e168-4db5-84e9-1e4e0ea10364) SMSPool | **<sub><sup>[[Site](https://www.smspool.net/)]</sup></sub>**
@@ -225,7 +231,7 @@ Here are some valuable features that can help minimize the attack surface and li
 - ![Cash](https://github.com/user-attachments/assets/4b66ba12-f109-4051-9c07-0d46dbc81545) Cash
 - ![Gift-cards](https://github.com/user-attachments/assets/6426d485-d0b8-45b8-86c0-3a6671a2cbf3) Gift cards
 - ![Privacy.com](https://github.com/user-attachments/assets/5c13a082-2ab9-4dea-aa77-f2f265c3e43e) Privacy.com [US] | **<sub><sup>[[Site](https://privacy.com/)]</sup></sub>** **<sub><sup>[[Google Play Store](https://play.google.com/store/apps/details?id=com.privacy.pay&pli=1)]</sup></sub>**
-- ![Revolut](https://github.com/user-attachments/assets/5632f011-1ca3-48c8-b1c0-7faea44a23d6) Revolut [EU] | **<sub><sup>[[Site](https://www.revolut.com/)]</sup></sub>** **<sub><sup>[[Google Play Store](https://play.google.com/store/apps/details?id=com.revolut.revolut&hl=it)]</sup></sub>**po
+- ![Revolut](https://github.com/user-attachments/assets/5632f011-1ca3-48c8-b1c0-7faea44a23d6) Revolut [EU] | **<sub><sup>[[Site](https://www.revolut.com/)]</sup></sub>** **<sub><sup>[[Google Play Store](https://play.google.com/store/apps/details?id=com.revolut.revolut&hl=it)]</sup></sub>**
 
 ## 4.22 Cryptocurrencies & Wallet
 - ![Monero](https://github.com/user-attachments/assets/a1cfabe1-ecb8-4ec0-969e-071a11fab73f) Monero | **<sub><sup>[[Site](https://www.getmonero.org/)]</sup></sub>** **<sub><sup>[[Download](https://www.getmonero.org/downloads/)]</sup></sub>**
