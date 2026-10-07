@@ -241,6 +241,14 @@ Here are some valuable features that can help minimize the attack surface and li
 The privacy world is continuously changing, with new applications, new features, and some downgrades. It's fundamental to stay updated, here are some of my suggestions for YouTube channels, news sources, and forums to help you stay updated.
 <details>
 
+<summary>Useful sources:</summary>
+
+- [What Data Do The Google Dialer and Messages Apps On Android Send to Google?](https://www.scss.tcd.ie/doug.leith/privacyofdialerandsmsapps.pdf)
+
+</details>
+
+<details>
+
 <summary>News:</summary>
 
 - [Electronic Frontier Foundation](https://www.eff.org/) | **<sub><sup>[[RSS Feed](https://www.eff.org/rss)]</sup></sub>**
@@ -276,4 +284,5 @@ The privacy world is continuously changing, with new applications, new features,
 - [PrivacySpy](https://privacyspy.org/)
 
 </details>
+
 
